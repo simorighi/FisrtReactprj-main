@@ -1,6 +1,7 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
 
+
 import './CircularGallery.css';
 
 type GL = Renderer['gl'];
@@ -478,39 +479,11 @@ class App {
     font: string
   ) {
     const defaultItems = [
-      {
-       /*  image: `https://picsum.photos/seed/1/800/600?grayscale`, */
-        image: './assets/react.svg', /*     NON SI FA COSI */
-        text: 'Bridge'
-      },
-      {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
-        text: 'Desk Setup'
-      },
-      {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
-        text: 'Waterfall'
-      },
-      {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
-        text: 'Strawberries'
-      },
-      {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
-        text: 'Deep Diving'
-      },
-      {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
-        text: 'Train Track'
-      },
-      {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
-        text: 'Santorini'
-      },
-      {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
-        text: 'Blurry Lights'
-      }
+      { image: './assets/Reti.jpg', text: 'RETI' },
+      { image: '/images/foto2.jpg', text: 'PROGRAMMAZIONE WEB' },
+      { image: '/images/foto3.jpg', text: 'PROGRAMMAZIONE 1' },
+      { image: '/images/foto4.jpg', text: 'Inglese' },
+      { image: '/images/foto5.jpg', text: 'Con gli amici' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
