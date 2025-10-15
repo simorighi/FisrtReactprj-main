@@ -81,7 +81,7 @@ class Title {
   font: string;
   mesh!: Mesh;
 
-  constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px sans-serif' }: TitleProps) {
+  constructor({ gl, plane, renderer, text, textColor = '#5B5B5B', font = '400px sans-serif' }: TitleProps) {
     autoBind(this);
     this.gl = gl;
     this.plane = plane;
@@ -482,7 +482,7 @@ class App {
       { image: './assets/Reti.jpg', text: 'RETI' },
       { image: '/images/foto2.jpg', text: 'PROGRAMMAZIONE WEB' },
       { image: '/images/foto3.jpg', text: 'PROGRAMMAZIONE 1' },
-      { image: '/images/foto4.jpg', text: 'Inglese' },
+      { image: '/images/foto4.jpg', text: 'INGLESE' },
       { image: '/images/foto5.jpg', text: 'Con gli amici' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
@@ -615,10 +615,10 @@ interface CircularGalleryProps {
 
 export default function CircularGallery({
   items,
-  bend = 3,
-  textColor = '#ffffff',
+  bend = 4,
+  textColor = '#5B5B5B',
   borderRadius = 0.05,
-  font = 'bold 30px Figtree',
+  font = 'bold 40px Figtree',
   scrollSpeed = 2,
   scrollEase = 0.05
 }: CircularGalleryProps) {

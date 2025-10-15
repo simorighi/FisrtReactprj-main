@@ -8,6 +8,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar.tsx'
 import CircularGallery from './components/Gallery/CircularGallery.tsx'
+import SpotlightCard from './components/Card/SpotlightCard.tsx'
+import SpotlightCardUsage from './components/Card/SpotlightCardUsage.tsx'
 
 /* createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -22,7 +24,8 @@ import CircularGallery from './components/Gallery/CircularGallery.tsx'
         <Navbar/>
       </header>
         <App />
-        <CircularGallery/>
+        {/* <SpotlightCardUsage/> */}
+        
       </BrowserRouter>
     </React.StrictMode>,
   )

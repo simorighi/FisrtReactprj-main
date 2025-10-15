@@ -1,4 +1,6 @@
 import { useState } from "react";
+import File from "../assets/file-earmark.svg"
+import "./fileList.css"
 
 type FileItem = {
   name: string;
@@ -23,7 +25,9 @@ function FileList({ subjectName }: Props) {
 
   return (
     <div>
-      <h4 className="mb-3">📁 File di {subjectName}</h4>
+      <h4 className="mb-3">
+        <img src={File} alt="file" className="file" />
+         Aggiungi File di <strong>{subjectName?.toUpperCase()}</strong></h4>
 
       {/* Form per aggiungere link */}
       <div className="mb-4">
@@ -47,10 +51,11 @@ function FileList({ subjectName }: Props) {
       </div>
 
       {/* Lista dei file */}
+      <h4>File di <strong>{subjectName?.toUpperCase()}</strong>:</h4>
       <ul className="list-group">
         {files.map((file, index) => (
           <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
-            <a href={file.url} target="_blank" rel="noopener noreferrer">
+            <a href={file.url} target="_blank" rel="noopener noreferrer" className="p-2">
               {file.name}
             </a>
           </li>

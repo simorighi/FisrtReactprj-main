@@ -1,0 +1,17 @@
+.svg {
+  width: 150%;
+  height: 150%;
+  color: black;
+}
+.svg:hover {
+  color: white;
+}
+
+.home:hover {
+  background-color: black;
+}
+
+.book {
+  width: 3%;
+  margin: 0.5rem;
+}

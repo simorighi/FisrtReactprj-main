@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import './Home.css'
 
-const subjects = ["Reti", "ProgramazioneWeb", "Programmazione1", "Inglese"];
+const subjects = ["Reti", "Programazione Web", "Programmazione 1", "Inglese"];
 
 function Home() {
   return (
@@ -34,10 +34,9 @@ function Home() {
           </div>
         ))}
       </div>
-
-      
     </div>
   );
+
 }
 
 export default Home;
