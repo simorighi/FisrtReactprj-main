@@ -1,6 +1,10 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
 
+import Java from '../../assets/Java.png';
+import Inglese from '../../assets/Inglese.jpg';
+import Reti from '../../assets/Reti.jpg';
+import Web from '../../assets/Web.jpg';
 
 import './CircularGallery.css';
 
@@ -479,11 +483,10 @@ class App {
     font: string
   ) {
     const defaultItems = [
-      { image: './assets/Reti.jpg', text: 'RETI' },
-      { image: '/images/foto2.jpg', text: 'PROGRAMMAZIONE WEB' },
-      { image: '/images/foto3.jpg', text: 'PROGRAMMAZIONE 1' },
-      { image: '/images/foto4.jpg', text: 'INGLESE' },
-      { image: '/images/foto5.jpg', text: 'Con gli amici' },
+      { image: Reti, text: 'RETI' },
+      { image: Web, text: 'PROGRAMMAZIONE WEB' },
+      { image: Java, text: 'PROGRAMMAZIONE 1' },
+      { image: Inglese, text: 'INGLESE' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -617,9 +620,9 @@ export default function CircularGallery({
   items,
   bend = 4,
   textColor = '#5B5B5B',
-  borderRadius = 0.05,
-  font = 'bold 40px Figtree',
-  scrollSpeed = 2,
+  borderRadius = 0.10,
+  font = 'bold 30px Figtree',
+  scrollSpeed = 1.3,
   scrollEase = 0.05
 }: CircularGalleryProps) {
   const containerRef = useRef<HTMLDivElement>(null);

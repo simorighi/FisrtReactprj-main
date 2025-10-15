@@ -6,7 +6,7 @@ const SpotlightCardUsage: React.FC = () => {
   return (
     <SpotlightCard
       className="custom-spotlight-card"
-      spotlightColor="rgba(189, 148, 61, 0.2)"
+      spotlightColor="rgba(148, 17, 148, 0.2)"
     >
       <div className="text-center mt-4">
         <h3>Benvenuto negli Appunti!</h3>

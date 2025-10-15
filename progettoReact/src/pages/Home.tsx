@@ -10,7 +10,7 @@ function Home() {
     <div className="container mt-5">
       <div className="row text-center">
         <div className="col-12 justify-content-center">
-          <h1 className="mt-5">APPUNTI</h1>
+          <h1 className="mt-5 100">APPUNTI</h1>
           <p>
             paragraafono Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
