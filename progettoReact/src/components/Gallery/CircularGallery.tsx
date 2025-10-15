@@ -483,6 +483,9 @@ class App {
     font: string
   ) {
     const defaultItems = [
+      /* 
+        DA METTERE ING. SOFTWARE
+      */
       { image: Reti, text: 'RETI' },
       { image: Web, text: 'PROGRAMMAZIONE WEB' },
       { image: Java, text: 'PROGRAMMAZIONE 1' },
