@@ -3,14 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import './Home.css'
 
-const subjects = ["Reti", "Programazione Web", "Programmazione 1", "Inglese"];
+const subjects = ["Reti", "Programazione Web", "Programmazione 1", "Inglese", "Ing. Software"];
 
 function Home() {
   return (
-    <div className="container mt-5">
-      <div className="row text-center">
+    
+    <div className="container mt-5" >
+      <div className="row text-center border" style={{marginBottom: "300px", marginTop: "300px"}}>
         <div className="col-12 justify-content-center">
-          <h1 className="mt-5 100">APPUNTI</h1>
+          <h1 className="mt-5 100 ">APPUNTI</h1>
           <p>
             paragraafono Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
@@ -19,14 +20,14 @@ function Home() {
 
       <div className="row">
         {subjects.map((subject) => (
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 " key={subject}>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-4 align-items-center justify-content-center" key={subject}>
             <Link
               to={`/subject/${subject.toLowerCase()}`}
               className="text-decoration-none"
             >
 
               <div className="row align-items-center mt-3 ">
-                <div className="col  text-center align-content-center">
+                <div className="col text-center align-items-center align-content-center">
                   <button className="buttHome p-4">{subject}</button>
                 </div>
               </div>

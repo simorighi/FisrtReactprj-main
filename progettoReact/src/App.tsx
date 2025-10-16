@@ -5,6 +5,7 @@ import SubjectPage from './pages/subjectPage'
 import SpotlightCard from './components/Card/SpotlightCard'
 import SpotlightCardUsage from './components/Card/SpotlightCardUsage'
 import CircularGallery from './components/Gallery/CircularGallery'
+import Orb from './components/Orb/Orb'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<SpotlightCardUsage />} />
         </Routes>
         {location.pathname === "/" && <CircularGallery />}
+        {location.pathname === "/" && <Orb/>}
       
     </>
   )

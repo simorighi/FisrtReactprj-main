@@ -5,6 +5,7 @@ import Java from '../../assets/Java.png';
 import Inglese from '../../assets/Inglese.jpg';
 import Reti from '../../assets/Reti.jpg';
 import Web from '../../assets/Web.jpg';
+import IngSoftware from '../../assets/IngSoftware.jpg';
 
 import './CircularGallery.css';
 
@@ -490,6 +491,7 @@ class App {
       { image: Web, text: 'PROGRAMMAZIONE WEB' },
       { image: Java, text: 'PROGRAMMAZIONE 1' },
       { image: Inglese, text: 'INGLESE' },
+      { image: IngSoftware, text: 'INGEGNERIA DEL SOFTWARE' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

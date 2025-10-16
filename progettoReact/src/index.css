@@ -69,6 +69,14 @@ button:focus-visible {
  */
 
 
- *{
+*{
   font-family: bold;
+  color: white;
+ }
+
+
+
+ .orbita{
+      width: 100%;
+      height: 100%;
  }
