@@ -1,21 +1,31 @@
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap'
-import './Home.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+import "./Home.css";
+import SpotlightCard from "../components/Card/SpotlightCard";
 
-const subjects = ["Reti", "Programazione Web", "Programmazione 1", "Inglese", "Ing. Software"];
+const subjects = [
+  "Reti",
+  "Programazione Web",
+  "Programmazione 1",
+  "Inglese",
+  "Ing. Software",
+];
 
 function Home() {
   return (
-    
-    <div className="container mt-5" >
-      <div className="row text-center" style={{marginBottom: "300px", marginTop: "300px"}}>
+    <div className="container mt-5">
+      <div
+        className="row text-center"
+        style={{ marginBottom: "20%", marginTop: "23%" }}
+      >
         <div className="col-12 justify-content-center">
-          <h1 className="mt-5 fs-1 text-white"><strong>APPUNTI</strong></h1>
-          <p className="text-white">
-            <strong>
-              AF 2025/27 
-            </strong>
+          <h1 className="mt-5 fs-1 text-white">
+            <strong>APPUNTI</strong>
+          </h1>
+          <p className="text-white fs-5">
+            <strong>AF 2025/27 <br /></strong>
+            Simone Righi
           </p>
         </div>
       </div>
@@ -39,7 +49,6 @@ function Home() {
       </div>
     </div>
   );
-
 }
 
 export default Home;

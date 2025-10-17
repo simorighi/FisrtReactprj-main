@@ -33,12 +33,6 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
 
   return (
     <div className={`container mt-5 ${className}`}>
-      <div className="text-center mb-5">
-        <h1 className="mt-5">APPUNTI</h1>
-        <p>Paragrafo Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-      </div>
-
-
       <div className="row">
         {subjects.map((subject) => (
           <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={subject}>
