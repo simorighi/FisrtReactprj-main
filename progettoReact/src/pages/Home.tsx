@@ -9,11 +9,13 @@ function Home() {
   return (
     
     <div className="container mt-5" >
-      <div className="row text-center border" style={{marginBottom: "300px", marginTop: "300px"}}>
+      <div className="row text-center" style={{marginBottom: "300px", marginTop: "300px"}}>
         <div className="col-12 justify-content-center">
-          <h1 className="mt-5 100 ">APPUNTI</h1>
-          <p>
-            paragraafono Lorem ipsum dolor sit amet consectetur adipisicing elit
+          <h1 className="mt-5 fs-1 text-white"><strong>APPUNTI</strong></h1>
+          <p className="text-white">
+            <strong>
+              AF 2025/27 
+            </strong>
           </p>
         </div>
       </div>
@@ -28,7 +30,7 @@ function Home() {
 
               <div className="row align-items-center mt-3 ">
                 <div className="col text-center align-items-center align-content-center">
-                  <button className="buttHome p-4">{subject}</button>
+                  <button className="buttHome p-4 ">{subject}</button>
                 </div>
               </div>
             </Link>

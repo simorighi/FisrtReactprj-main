@@ -18,13 +18,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <header>
         <Navbar />
       </header>
-      
+
       {/* MODIFICARE IL RESPONSE */}
-      <div className="continer border">
+      <div className="continer ">
         <div className="row">
           <div className="col orbita">
             <Orb
-              hoverIntensity={0.5}
+              hoverIntensity={0.9}
               rotateOnHover={true}
               hue={0}
               forceHoverState={false}
@@ -33,8 +33,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </div>
       </div>
       <App />
-      
     </BrowserRouter>
   </React.StrictMode>
 );
-  

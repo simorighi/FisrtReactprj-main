@@ -21,7 +21,6 @@ function App() {
           <Route path="/" element={<SpotlightCardUsage />} />
         </Routes>
         {location.pathname === "/" && <CircularGallery />}
-        {location.pathname === "/" && <Orb/>}
       
     </>
   )
