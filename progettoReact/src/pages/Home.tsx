@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./Home.css";
-import SpotlightCard from "../components/Card/SpotlightCard";
+/* import SpotlightCard from "../components/Card/SpotlightCard"; */
 
 const subjects = [
   "Reti",
