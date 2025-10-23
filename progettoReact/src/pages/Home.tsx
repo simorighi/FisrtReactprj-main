@@ -21,10 +21,10 @@ function Home() {
       >
         <div className="col-12 justify-content-center">
           <h1 className="mt-5 fs-1 text-white">
-            <strong>APPUNTI</strong>
+            <strong className="text-white-50">APPUNTI</strong>
           </h1>
-          <p className="text-white fs-5">
-            <strong>AF 2025/27 <br /></strong>
+          <p className="text-white fs-5 text-white-50">
+            <strong >AF 2025/27 <br /></strong>
             Simone Righi
           </p>
         </div>
@@ -40,7 +40,7 @@ function Home() {
 
               <div className="row align-items-center mt-3 ">
                 <div className="col text-center align-items-center align-content-center">
-                  <button className="buttHome p-4 ">{subject}</button>
+                  <button className="btn btn-dark w-100 rounded-4 px-4 py-4"><p className="fs-5 pt-1 text-white-50">{subject}</p></button>
                 </div>
               </div>
             </Link>

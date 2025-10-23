@@ -8,3 +8,14 @@
 h1,p{
     color: #1C1C1C;
 }
+
+button.btn.btn-dark {
+    border-color: #1c1c1c4d;
+  }
+
+button.btn.btn-dark:hover {
+    background-color: #24272e;
+    color: #ffffff; /* Cambia il colore del testo */
+    border-color: #1c1c1c2d; /* Cambia il colore del bordo */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Aggiungi una transizione fluida */
+  }
