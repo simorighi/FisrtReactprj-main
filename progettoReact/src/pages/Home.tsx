@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./Home.css";
-/* import SpotlightCard from "../components/Card/SpotlightCard"; */
 
 const subjects = [
   "Reti",
@@ -40,7 +39,7 @@ function Home() {
 
               <div className="row align-items-center mt-3 ">
                 <div className="col text-center align-items-center align-content-center">
-                  <button className="btn btn-dark w-100 rounded-4 px-4 py-4"><p className="fs-5 pt-1 text-white-50">{subject}</p></button>
+                  <button className="btn btn-dark w-100 rounded-4 px-4 py-4 spotlighCard"><p className="fs-5 pt-1 text-white-50">{subject}</p></button>
                 </div>
               </div>
             </Link>
