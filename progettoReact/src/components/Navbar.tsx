@@ -27,13 +27,9 @@ function Navbar() {
           </li>
         </ul>
 
-        
-
-        
-
         {subject.map((subject) => (
-          <Link to={`/subject/${subject.toLowerCase()}`} className="text-decoration-none mb-2" key={subject}>
-            <a className="btn w-100 text-white my-1 text-start" >{subject}</a>
+          <Link to={`/subject/${subject.toLowerCase()}`} className="text-decoration-none mb-2 navbar-brand " key={subject}>
+            <p className="btn w-100 text-white my-1 text-start" >{subject}</p>
           </Link>
         ))}
 

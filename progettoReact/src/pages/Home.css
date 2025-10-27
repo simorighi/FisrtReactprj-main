@@ -9,11 +9,11 @@ h1,p{
     color: #1C1C1C;
 }
 
-button.btn.btn-dark {
+.si {
     border-color: #1c1c1c4d;
   }
 
-button.btn.btn-dark:hover {
+.si:hover {
     background-color: #24272e;
     color: #ffffff; /* Cambia il colore del testo */
     border-color: #1c1c1c2d; /* Cambia il colore del bordo */
